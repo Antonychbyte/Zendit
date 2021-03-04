@@ -759,11 +759,11 @@ h6 {
   background: url(../images/hero__bg.svg) no-repeat bottom/100%;
 }
 
-.offer__form-wrapper {
+.form {
   position: relative;
   z-index: 5;
   max-width: 1450px;
-  margin: calc(-160px - 5.5rem) auto 5.5rem;
+  margin: -160px auto 0;
   padding: 1.5em 2.2em 2.2em 2.2em;
   background: #ffffff;
   -webkit-box-shadow: 8px 8px 100px 10px rgba(0, 0, 0, 0.1);
@@ -771,25 +771,25 @@ h6 {
   border-radius: 20px;
 }
 
-.offer #anchor-form {
+.form #anchor-form {
   position: absolute;
-  top: -5rem;
+  top: -10rem;
 }
 
-.offer__form-title.title {
+.form__title.title {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.offer__form-title.title span {
+.form__title.title span {
   text-align: left;
   font-size: 0.7em;
   font-weight: 400;
   display: block;
 }
 
-.offer__form {
+.form__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,7 +798,7 @@ h6 {
           justify-content: space-between;
 }
 
-.offer__form-input {
+.form__input {
   padding: 1em 2em;
   background: #efefef;
   border-radius: 10px;
@@ -806,29 +806,30 @@ h6 {
       -ms-flex: 0 0 67%;
           flex: 0 0 67%;
   font-size: 0.83rem;
+  line-height: 1.5;
 }
 
-.offer__form-input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   color: #9f9f9f;
 }
 
-.offer__form-input::-moz-placeholder {
+.form__input::-moz-placeholder {
   color: #9f9f9f;
 }
 
-.offer__form-input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   color: #9f9f9f;
 }
 
-.offer__form-input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder {
   color: #9f9f9f;
 }
 
-.offer__form-input::placeholder {
+.form__input::placeholder {
   color: #9f9f9f;
 }
 
-.offer__form-button {
+.form__button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
@@ -1111,7 +1112,7 @@ h6 {
   line-height: 1.5;
 }
 
-.footer__inner-item h5 {
+.footer__inner-item h3 {
   font-size: 0.9rem;
   line-height: 1.5;
   color: #ffffff;
@@ -1402,14 +1403,14 @@ section:last-of-type {
 }
 
 @media (max-width: 950px) {
-  .offer__form {
+  .form__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 
-  .offer__form-input {
+  .form__input {
     margin-bottom: 1em;
   }
 }
